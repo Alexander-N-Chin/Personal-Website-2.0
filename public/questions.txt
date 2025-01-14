@@ -1,0 +1,40 @@
+A;-;You often surrender games before 20 minutes if you're not having fun.
+A;+;You frequently mute all chat.
+A;-;You have received in-game punishments or restrictions.
+A;-;When things go wrong, you usually blame someone else, like the jungler.
+A;+;You have a high honor score
+A;-;You're casually racist
+A;+;You will play losing games out for the chance of victory.
+A;-;When you lose a match, you often think it's due to your team's mistakes.
+A;+;You gently try to raise team morale with the occasional "gj" or "nj" 
+A;-;If someone on your team pisses you off, you would intentionally feed to make their day worse.
+P;-;You prioritize learning your champion's combos to get the upperhand on your opponents.
+P;+;You gravitate towards simple champions that make it easier to focus on the game.
+P;-;You like one-tricking champions with a high skill ceiling.
+P;+;You focus on improving your overall game strategy.
+P;-;You are drawn to flashy plays and high-risk, high-reward champions.
+P;-;You enjoy mastering intricate mechanics and executing complex plays.
+P;+;Doing a lot of damage to towers (and not champions) sounds like a lot of fun.
+P;-;You enjoy hookers.
+P;+;You frequently prioritize objectives over kills.
+P;+;You value vision control and frequently ward key areas of the map.
+L;-;You often call for your team to group up.
+L;-;You feel comfortable taking kills from your teammates.
+L;-;You are comfortable being the one to initiate team fights.
+L;+;You prefer to follow someone else’s lead in-game.
+L;+;Assists are as important to you as kills.
+L;+;You often play champions that support your team.
+L;+;You don't care if someone else gets the spotlight as long as you win.
+L;-;Leading your team to victory is more satisfying than supporting from the backline.
+L;-;You handle situations where your team is split on what to do.
+L;+;You would rather be the support than the main damage dealer for your team.
+M;-;You play for fun and don't mind losing as long as the game is enjoyable.
+M;+;You aim to climb the ranked ladder and improve your skills consistently.
+M;-;You enjoy experimenting with off-meta builds and champions.
+M;-;You prefer casual game modes like ARAM or Arena.
+M;+;You focus on winning and take each match seriously.
+M;-;You don't stress over performance and just want to relax while playing.
+M;+;You analyze your games to find areas for improvement.
+M;+;You keep track of your win rates and stats to monitor your progress.
+M;-;You prioritize having a good time with friends over solo climbing.
+M;+;You study patch notes and adapt quickly to meta changes.
