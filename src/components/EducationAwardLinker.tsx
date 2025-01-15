@@ -3,8 +3,8 @@ import { Box, Text, Wrap, WrapItem, VStack, Flex } from "@chakra-ui/react";
 
 const educationAwardData = {
   education: [
-    { id: "edu1", school: "The University of Texas at Austin", name: "Ph.D. in Electrical and Computer Engineering", awardIds: ["award1"], date: "Fall 2024 - Present" },
-    { id: "edu2", school: "The University of Texas at Dallas", name: "B.S. in Computer Science", awardIds: ["award2", "award3", "award4", "award5"], date: "Fall 2021 - Spring 2024" },
+    { id: "edu1", school: "The University of Texas at Austin", name: "Ph.D. in Electrical and Computer Engineering", awardIds: ["award4"], date: "Fall 2024 - Present" },
+    { id: "edu2", school: "The University of Texas at Dallas", name: "B.S. in Computer Science", awardIds: ["award2", "award3", "award1", "award5"], date: "Fall 2021 - Spring 2024" },
     { id: "edu3", school: "George Ranch Highschool", name: "Highschool Diploma", awardIds: ["award6"], date: "Fall 2017 - Spring 2021" },
   ],
   awards: [

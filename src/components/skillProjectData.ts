@@ -183,7 +183,7 @@ export const skillProjectData = {
       description: "",
       images: [],
       date: "Summer 2024",
-      links: ["https://github.com/Alexander-N-Chin/Briar-Ziggs"],
+      links: ["https://github.com/Alexander-N-Chin/Briar-Ziggs", "https://briarziggs.com/"],
       title: "",
     },
     {
@@ -205,7 +205,7 @@ export const skillProjectData = {
       description: "",
       images: [],
       date: "Spring 2024",
-      links: ["https://github.com/PolyphonyPal-HQ/polyphony-pal"],
+      links: ["https://github.com/PolyphonyPal-HQ/polyphony-pal", "https://polyphonypal.netlify.app/"],
       title: "",
     },
     {
@@ -227,7 +227,7 @@ export const skillProjectData = {
       description: "",
       images: [],
       date: "Spring 2023",
-      links: ["https://github.com/rohanchugh14/gamify-credit-cards"],
+      links: ["https://github.com/rohanchugh14/gamify-credit-cards", "https://readyplayercredit.netlify.app/"],
       title: "",
     },
     {
