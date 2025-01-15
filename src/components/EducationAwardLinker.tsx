@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Box, Text, Wrap, WrapItem, VStack, Flex } from "@chakra-ui/react";
 
 const educationAwardData = {

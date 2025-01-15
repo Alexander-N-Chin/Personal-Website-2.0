@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { Container } from '@chakra-ui/react';
 import Landing from './components/landing';
 import Nutshell from './components/Nutshell';

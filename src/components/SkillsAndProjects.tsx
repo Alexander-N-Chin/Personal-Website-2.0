@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Box, Text, Wrap, WrapItem, HStack, VStack } from "@chakra-ui/react";
 import {
   Drawer,

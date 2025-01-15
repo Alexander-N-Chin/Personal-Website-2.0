@@ -1,11 +1,7 @@
 import {
-  Box,
-  Button,
   Center,
   Container,
   Heading,
-  Stack,
-  Text,
   VStack,
 } from '@chakra-ui/react';
 import SkillProjectHighlighter from './SkillsAndProjects';
