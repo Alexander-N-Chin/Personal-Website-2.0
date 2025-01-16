@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { Box, Center, Container, VStack } from '@chakra-ui/react';
+import { Container, VStack } from '@chakra-ui/react';
 import Landing from './components/landing';
 import Nutshell from './components/Nutshell';
   
