@@ -196,7 +196,7 @@ const SkillProjectHighlighter = () => {
         <DrawerContent>
           <DrawerCloseButton />
           <DrawerHeader fontSize="xx-large">{selectedItem?.name}</DrawerHeader>
-          <DrawerBody>
+          <DrawerBody overflowY={"auto"}>
             <Text fontSize="x-large">{selectedItem?.title}</Text>
             <Text fontSize="large">{selectedItem?.date}</Text>
             <Text fontSize="large" mt={10}>Description:</Text>

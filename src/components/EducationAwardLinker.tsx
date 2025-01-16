@@ -48,13 +48,13 @@ const EducationAwardLinker = () => {
   };
 
   return (
-    <VStack spacing={4} width="100%" align="start" mb={5} mt={-5}>
+    <VStack spacing={4} width="100%" align="start" mt={-12}>
       {/* Education List */}
       <Box width="100%">
         <Text fontSize="xl" mb={2} fontWeight="bold">
           Education
         </Text>
-        <Box width="100%" border="1px solid #ddd" p={4} borderRadius="md">
+        <VStack width="100%" border="1px solid #ddd" p={4} borderRadius="md">
             {educationAwardData.education.map((education) => {
             const isHighlighted = highlightedEducation.includes(education.id);
             return (
@@ -65,7 +65,6 @@ const EducationAwardLinker = () => {
                 transition="all 0.1s ease"
                 fontWeight={isHighlighted ? "bold" : "normal"}
                 opacity={isHighlighted ? 0.8 : 0.6}
-                mb="8px"
                 width="100%"
                 >
                 <Text fontStyle="italic">{education.school}</Text>
@@ -76,7 +75,7 @@ const EducationAwardLinker = () => {
                 </Box>
             );
             })}
-        </Box>
+        </VStack>
       </Box>
 
       {/* Awards List */}

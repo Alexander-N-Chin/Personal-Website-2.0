@@ -9,8 +9,7 @@ import EducationAwardLinker from './EducationAwardLinker';
   
 const Nutshell = () => {
   return (
-    <Container maxW="container.xl" p={4} pt={10}>
-      <Center h="100vh">
+    <Container maxW="container.xl" pt={10} minHeight={"100vh"}>
         <VStack spacing={4} align="start">
           <Heading as="h2" size="2xl" textAlign="left">
             In a nutshell...
@@ -18,7 +17,6 @@ const Nutshell = () => {
           <SkillProjectHighlighter/>
           <EducationAwardLinker/>
         </VStack>
-      </Center>
     </Container>
   );
 };

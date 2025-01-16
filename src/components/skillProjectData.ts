@@ -10,7 +10,7 @@ export const skillProjectData = {
     {
       id: "bash",
       name: "Shell Bash",
-      projectIds: ["e1", "e2", "e3", "e4", "p1", "p2", "p3", "p5", "p6", "p7"],
+      projectIds: ["e1", "e2", "e3", "e4", "p1", "p2", "p3", "p5", "p6", "p7", "p0"],
     },
     { id: "go", name: "Go", projectIds: ["e1"] },
     { id: "fortran", name: "Fortran", projectIds: ["e2"] },
@@ -22,6 +22,7 @@ export const skillProjectData = {
     { id: "css", name: "CSS", projectIds: ["p1", "p2", "p3", "p5", "p7"] },
     { id: "ts", name: "TypeScript", projectIds: ["p1", "p3", "p5"] },
     { id: "html", name: "HTML", projectIds: ["p1", "p2", "p3", "p5", "p7"] },
+    { id: "git", name: "Git", projectIds: ["e1", "e2", "e3", "e4", "p0", "p1", "p2", "p3", "p4", "p5", "p6", "p7"] },
     { id: "sql", name: "SQL", projectIds: ["e1", "p2"] },
     { id: "latex", name: "LaTex", projectIds: ["e2", "e3"] },
     {
@@ -36,9 +37,9 @@ export const skillProjectData = {
     { id: "pg", name: "PostgresDB", projectIds: ["e1", "p2"] },
     { id: "velocity", name: "Apache Velocity", projectIds: ["e5"] },
     { id: "jupyter", name: "Jupyter Notebook", projectIds: ["e3", "p6", "p7"] },
-    { id: "pandas", name: "Pandas", projectIds: ["e2", "e3", "p6", "p7"] },
-    { id: "numpy", name: "NumPy", projectIds: ["e2", "e3", "p6", "p7"] },
-    { id: "matplotlib", name: "MatPlotLib", projectIds: ["e2", "e3", "p7"] },
+    { id: "pandas", name: "Pandas", projectIds: ["e2", "e3", "p6", "p7", "p0"] },
+    { id: "numpy", name: "NumPy", projectIds: ["e2", "e3", "p6", "p7", "p0"] },
+    { id: "matplotlib", name: "MatPlotLib", projectIds: ["e2", "e3", "p7", "p0"] },
     { id: "sci", name: "Scikit Learn", projectIds: ["e3", "p6", "p7"] },
     { id: "cv", name: "OpenCV", projectIds: ["p6"] },
     { id: "k8s", name: "Kubernetes", projectIds: ["e1"] },
@@ -82,6 +83,7 @@ export const skillProjectData = {
         "tf",
         "docker",
         "sql",
+        "git",
       ],
       description:
         "I executed over 200 service deployments and updates, maintaining FEDRAMP-high security protocols in the AWS GovCloud environment. I developed an SSL certificate manager to streamline certificate replacements within the Kubernetes environment and ensured 24/7 service availability through on-call rotations and collaboration with application teams. Additionally, I efficiently migrated services from Aurora/Mesos to Kubernetes, used Grafana and Loki to create monitoring dashboards, and pinpoint error logs across the GovCloud environment. I also designed architecture diagrams to support significant changes to the environment.",
@@ -106,6 +108,7 @@ export const skillProjectData = {
         "sputter",
         "mfm",
         "moke",
+        "git",
       ],
       description: "I led the growth of skyrmion stacks using a sputtering machine and characterized them with VSM and MFM, while utilizing MOKE imaging to visualize the skyrmions. Additionally, I refined simulations of magnetic tunnel junction-based true random number generators by incorporating both adiabatic and non-adiabatic torques. I also developed and verified a simulation for antiferromagnetic tunnel junction-based true random number generators, showcasing their potential for superfast switching and low-power operation.",
       images: ["/images/INC-Logo.png", "/images/incphoto.jpeg"],
@@ -126,6 +129,7 @@ export const skillProjectData = {
         "latex",
         "figma",
         "sci",
+        "git",
       ],
       description: "I investigated hybrid logic locking systems utilizing strain-modulated nanomagnets under Dr. Joseph S. Friedman, where I led the development of logic-locking programs through innovative applications of graph partitioning algorithms. I encrypted over 500,000 different netlists and ran them through a satisfiability solver simulation, quantifying algorithmic security and improving encryption times from 2 seconds to over 12 hours. Additionally, as a Research Assistant at the Center for Robust Speech Systems, I collaborated with NASA to analyze Human Exploration Research Analog audio recordings under Dr. John H. L. Hansen. I optimized speech audio detection inferences for more than 16 hours of audio using the open-source ESPnet framework, analyzing word error rates and signal-to-noise ratios for different audio devices with the Whisper automatic speech recognition model.",
       images: ["/images/nsclogo.png", "/images/nscposter.jpg"],
@@ -136,7 +140,7 @@ export const skillProjectData = {
     {
       id: "e4",
       name: "Center for Robust Speech Systems",
-      skillIds: ["python", "bash"],
+      skillIds: ["python", "bash", "git"],
       description: "I analyzed Human Exploration Research Analog (HERA) audio recordings in collaboration with NASA under the mentorship of Dr. John H. L. Hansen. Using the open-source ESPnet framework, I optimized speech audio detection for over 16 hours of recorded data. I evaluated audio quality by analyzing word error rates (WER) and signal-to-noise ratios (SNR) across various recording devices using the Whisper automatic speech recognition model, enhancing the accuracy and reliability of speech-based data processing.",
       images: ["/images/HERA.jpeg", "/images/crssposter.jpg"],
       date: "Fall 2023 - Spring 2024",
@@ -156,6 +160,22 @@ export const skillProjectData = {
   ],
   projects: [
     {
+      id: "p0",
+      name: "Graphene Multiaxial Strain Simulation",
+      skillIds: [
+        "python",
+        "numpy",
+        "matplotlib",
+        "bash",
+        "git"
+      ],
+      description: "This project simulates multiaxial strain on graphene and provides interactive visualizations of its electronic structure and lattice geometry. The tool enables users to explore how strain affects the direct lattice, reciprocal lattice, ⚡ energy dispersion, and bandgap properties of graphene. By adjusting the strain parameters, users can observe the resulting changes in the electronic structure and lattice geometry, gaining insights into the unique properties of strained graphene. This project showcases the impact of strain engineering on the electronic properties of graphene, highlighting its potential applications in nanoelectronics and optoelectronics.",
+      images: ["/images/GUI.png"],
+      date: "Fall 2024",
+      links: ["https://github.com/Alexander-N-Chin/Graphene-Multiaxial-Strain-Simulation"],
+      title: "",
+    },
+    {
       id: "p1",
       name: "FiscalFootprint: Government Spending Visualizer",
       skillIds: [
@@ -169,6 +189,7 @@ export const skillProjectData = {
         "aws",
         "figma",
         "docker",
+        "git"
       ],
       description: "For the HackTX 24-hour hackathon, I led the development of a web application that visualizes government spending data to promote financial literacy and transparency. We were able to use the USAspending.gov API to access federal spending data and display it in an interactive and user-friendly format. Unfortunately, we were unable to win the competition, but we learned a lot about web development and data visualization, and we were able to create a functional prototype.",
       images: ["/images/ff3.jpg", "/images/ff1.jpg", "/images/ff2.jpg"],
@@ -201,6 +222,7 @@ export const skillProjectData = {
         "pg",
         "docker",
         "figma",
+        "git"
       ],
       description: "For my senior design project, I developed Polyphony Pal, an innovative application designed to enhance the study and practice of classical partwriting. The app analyzes partwriting sheet music, grading it and identifying errors based on established classical partwriting rules, providing users with valuable feedback for improvement. Additionally, it generates every valid composition for a given key signature and Roman numeral sequence, making it a powerful tool for both learning and creative composition. This project allowed me to combine my technical skills with a passion for music theory, resulting in a practical and user-friendly tool for musicians and educators.",
       images: [],
@@ -223,6 +245,7 @@ export const skillProjectData = {
         "node",
         "mango",
         "figma",
+        "git"
       ],
       description: "During Formula Hack at UT Austin, I collaborated with a team of three to create Ready Player Credit, a gamified online banking solution that earned First Prize for Capital One's Best Financial Hack out of 40+ teams. I utilized the MERN stack and Chakra UI React Library to build a fully functional simulated credit system, mimicking state-of-the-art online banking features. To bring our vision to life, I crafted 13 custom React components, ensuring smooth functionality, engaging user interactions, and a cohesive design experience. To elevate the project, I integrated tools like Eleven Labs, which added humorous AI narrations, and PropelAuth, enabling secure single sign-on authentication. These enhancements not only boosted user engagement but also streamlined security measures. This experience showcased my ability to merge creativity with technical skills, delivering a polished, user-focused solution under tight deadlines.",
       images: ["/images/rpc1.jpg", "/images/rpc2.jpg", "/images/rpc3.jpg"],
@@ -233,7 +256,7 @@ export const skillProjectData = {
     {
       id: "p6",
       name: "ErgoBlink: Posture and Blink Detection",
-      skillIds: ["python", "bash", "jupyter", "numpy", "pandas", "sci", "cv"],
+      skillIds: ["python", "bash", "jupyter", "numpy", "pandas", "sci", "cv", "git"],
       description: "ErgoBlink is a fully functioning application that helps mitigate computer vision syndrome and improve posture, overall helping with better human-computer interaction and improving health. It achieves this by using computer vision and machine learning algorithms to classify and detect bad posture and eye blinking patterns, as well as providing reminders for screen breaks. The bad posture classification/detection feature uses the front-facing camera on the device to capture the user's posture in real time.\nThe algorithm analyzes the posture using deep learning techniques to determine whether it falls within a range of bad postures. When a bad posture is detected, the app gives the user a gentle reminder to adjust their posture. The blink interval detection feature monitors the user's blinking patterns and alerts them if they are not blinking frequently enough. The app uses computer vision to track the user's eye movements and detect the time intervals between blinks using Eye Aspect Ratio (EAR). \nOverall, this app provides a comprehensive solution for promoting healthy screen time habits. By detecting bad postures, monitoring blinking patterns, and providing screen time reminders, the app encourages users to take care of their physical and mental health while using digital devices.",
       images: ["/images/good.png"],
       date: "Spring 2023",
@@ -243,7 +266,7 @@ export const skillProjectData = {
     {
       id: "p4",
       name: "Sorting Visualizer",
-      skillIds: ["mips"],
+      skillIds: ["mips", "git"],
       description: "For my computer arcitecture project [CS 2340], I decided to create a sorting visualizer in MIPS Assembly. The visualizer allows users to see how different sorting algorithms work in real time. The sorting algorithms I implemented were Bubble Sort, Quick Sort, and Insertion Sort.",
       images: ["/images/InsertionSortGif.gif", "/images/QuickSortGif.gif", "/images/BubbleSortGif.gif"],
       date: "Spring 2022",
@@ -267,6 +290,7 @@ export const skillProjectData = {
         "matplotlib",
         "docker",
         "figma",
+        "git"
       ],
       description: "ResuBot is a tool designed to help people improve their resumes and receive job suggestions that match their qualifications and experiences. Our platform was developed by students who were eager for internships, but frustrated by the challenge of effectively showcasing their qualifications and experiences to potential employers.",
       images: ["/images/resubot.png", "/images/resubot2.png"],
