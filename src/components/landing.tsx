@@ -20,15 +20,15 @@ const Landing = ({ handleStart }: Props) => {
                 Alexander N. Chin
               </Heading>
               <Text fontSize="xl" textAlign="center">
-                Hello! Let me introduce myself.
+                Researcher & Site Reliability Engineer
               </Text>
               <Stack direction={['column', 'row']} spacing={4} >
                 <Button colorScheme="teal" size="lg" onClick={handleStart}>
-                  Get to know me
+                  Interactive Resume
                 </Button>
                 <a href="/resume.pdf" download="resume.pdf">
                   <Button colorScheme="gray" size="lg" variant="outline">
-                    Resume
+                    Normal Resume
                   </Button>
                 </a>
               </Stack>

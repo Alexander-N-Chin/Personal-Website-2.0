@@ -87,7 +87,7 @@ export const skillProjectData = {
       ],
       description:
         "I executed over 200 service deployments and updates, maintaining FEDRAMP-high security protocols in the AWS GovCloud environment. I developed an SSL certificate manager to streamline certificate replacements within the Kubernetes environment and ensured 24/7 service availability through on-call rotations and collaboration with application teams. Additionally, I efficiently migrated services from Aurora/Mesos to Kubernetes, used Grafana and Loki to create monitoring dashboards, and pinpoint error logs across the GovCloud environment. I also designed architecture diagrams to support significant changes to the environment.",
-      images: ["/images/medallia.png", "/images/medallia2.webp"],
+      images: ["/images/medallia3.png", "/images/medallia.png", "/images/medallia2.webp"],
       date: "Summer 2024 - Present",
       links: ["https://www.medallia.com"],
       title: "Site Reliability Engineer",
@@ -152,7 +152,7 @@ export const skillProjectData = {
       name: "Collins Aerospace",
       skillIds: ["java", "velocity"],
       description: "I utilized model-based systems engineering (MBSE) design paradigms to develop a tool that automates the generation of formal engineering documents from a Cameo model for Collins Aerospace's Mission Systems projects. By eliminating manual documentation generation, I reduced document production costs by 98%, resulting in projected savings of 2.3% of the total contract—equivalent to $6.8 million—for a directly supported project. I collaborated with engineering teams to understand their documentation needs, creating tailored solutions that enhanced efficiency. I also delivered an oral presentation to senior executives in Cedar Rapids, Iowa, showcased my work in a site-wide poster presentation, and composed comprehensive user manuals while training engineers to use and extend the tool.",
-      images: ["/images/collins.jpeg"],
+      images: ["/images/collins.jpeg", "/images/ca2.jpg"],
       date: "Summer 2023",
       links: ["https://www.collinsaerospace.com/"],
       title: "Software Engineer Intern",
@@ -170,7 +170,7 @@ export const skillProjectData = {
         "git"
       ],
       description: "This project simulates multiaxial strain on graphene and provides interactive visualizations of its electronic structure and lattice geometry. The tool enables users to explore how strain affects the direct lattice, reciprocal lattice, ⚡ energy dispersion, and bandgap properties of graphene. By adjusting the strain parameters, users can observe the resulting changes in the electronic structure and lattice geometry, gaining insights into the unique properties of strained graphene. This project showcases the impact of strain engineering on the electronic properties of graphene, highlighting its potential applications in nanoelectronics and optoelectronics.",
-      images: ["/images/GUI.png"],
+      images: ["/images/GUI.png", "/images/graphene.png", "/images/g1.png"],
       date: "Fall 2024",
       links: ["https://github.com/Alexander-N-Chin/Graphene-Multiaxial-Strain-Simulation"],
       title: "",
@@ -225,7 +225,7 @@ export const skillProjectData = {
         "git"
       ],
       description: "For my senior design project, I developed Polyphony Pal, an innovative application designed to enhance the study and practice of classical partwriting. The app analyzes partwriting sheet music, grading it and identifying errors based on established classical partwriting rules, providing users with valuable feedback for improvement. Additionally, it generates every valid composition for a given key signature and Roman numeral sequence, making it a powerful tool for both learning and creative composition. This project allowed me to combine my technical skills with a passion for music theory, resulting in a practical and user-friendly tool for musicians and educators.",
-      images: [],
+      images: ["/images/pp1.png", "/images/pp2.png"],
       date: "Spring 2024",
       links: ["https://polyphonypal.netlify.app/", "https://github.com/PolyphonyPal-HQ/polyphony-pal"],
       title: "",
