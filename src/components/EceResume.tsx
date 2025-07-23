@@ -3,7 +3,7 @@ import { skillProjectData } from './skillProjectData';
 
 // Filter experiences and projects related to ECE research
 const eceExperienceIds = ['e2', 'e3', 'e4']; // IDs of ECE research experiences
-const eceProjectIds = ['p0']; // IDs of projects related to ECE research
+const eceProjectIds = ['p0', 'p8']; // IDs of projects related to ECE research
 
 const filteredExperiences = skillProjectData.experiences.filter(exp => eceExperienceIds.includes(exp.id));
 const filteredProjects = skillProjectData.projects.filter(proj => eceProjectIds.includes(proj.id));

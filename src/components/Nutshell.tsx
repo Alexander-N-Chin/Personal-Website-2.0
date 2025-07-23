@@ -18,8 +18,8 @@ import EducationAwardLinker from './EducationAwardLinker';
 
 const Nutshell = () => {
   const { colorMode, setColorMode } = useColorMode();
-  const [tabIndex, setTabIndex] = useState(0);
-  const [bgColor, setBgColor] = useState(colorMode === 'dark' ? 'gray.800' : 'white');
+  const [tabIndex, setTabIndex] = useState(1);
+  const [bgColor, setBgColor] = useState('gray.800');
 
   useEffect(() => {
     if (tabIndex === 1 && colorMode !== 'dark') {

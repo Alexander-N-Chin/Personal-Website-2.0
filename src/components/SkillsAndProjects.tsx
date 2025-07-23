@@ -37,12 +37,6 @@ interface Project {
   links: string[];
 }
 
-// interface SkillProjectData {
-//   skills: Skill[];
-//   experiences: Experience[];
-//   projects: Project[];
-// }
-
 type Props = {
   skills: Skill[];
   experiences: Experience[];
@@ -190,7 +184,7 @@ const SkillProjectHighlighter = ({ skills, experiences, projects }: Props) => {
 
       {/* Conditional Drawer Rendering */}
       {isMobile ? (
-        <Drawer isOpen={isOpen} placement="bottom" onClose={onClose} size="full">
+        <Drawer isOpen={isOpen} placement="bottom" onClose={onClose} size="full" trapFocus={false} blockScrollOnMount={false} >
           <DrawerContent>
             <DrawerCloseButton />
             <DrawerHeader fontSize="xx-large">{selectedItem?.name}</DrawerHeader>
@@ -222,7 +216,7 @@ const SkillProjectHighlighter = ({ skills, experiences, projects }: Props) => {
         </Drawer>
       ) : (
         <>
-          <Drawer isOpen={isOpen} placement="right" onClose={onClose} size={['xs', 'sm', 'md']}>
+          <Drawer isOpen={isOpen} placement="right" onClose={onClose} size={['xs', 'sm', 'md']} trapFocus={false} blockScrollOnMount={false} >
             <DrawerContent>
               <DrawerCloseButton />
               <DrawerHeader></DrawerHeader>
@@ -241,7 +235,7 @@ const SkillProjectHighlighter = ({ skills, experiences, projects }: Props) => {
             </DrawerContent>
           </Drawer>
 
-          <Drawer isOpen={isOpen} placement="left" onClose={onClose} size={['xs', 'sm', 'md']}>
+          <Drawer isOpen={isOpen} placement="left" onClose={onClose} size={['xs', 'sm', 'md']} trapFocus={false} blockScrollOnMount={false} >
             <DrawerContent>
               <DrawerCloseButton />
               <DrawerHeader fontSize="xx-large">{selectedItem?.name}</DrawerHeader>
