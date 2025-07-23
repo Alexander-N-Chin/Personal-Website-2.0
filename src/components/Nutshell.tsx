@@ -68,8 +68,8 @@ const Nutshell = () => {
           </Heading>
           <Tabs variant="enclosed" width="100%" index={tabIndex} onChange={handleTabsChange}>
             <TabList>
-              <Tab>ECE Research</Tab>
-              <Tab>CS / SRE</Tab>
+              <Tab>Research</Tab>
+              <Tab>Site Reliability Engineering</Tab>
             </TabList>
             <TabPanels>
               <TabPanel p={0}>
