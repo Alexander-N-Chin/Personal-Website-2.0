@@ -1,5 +1,4 @@
 import {
-  Container,
   Heading,
   VStack,
   Button,
@@ -20,25 +19,19 @@ import EducationAwardLinker from './EducationAwardLinker';
 const Nutshell = () => {
   const { colorMode, setColorMode } = useColorMode();
   const [tabIndex, setTabIndex] = useState(0);
-  const [fade, setFade] = useState(false);
   const [bgColor, setBgColor] = useState(colorMode === 'dark' ? 'gray.800' : 'white');
-  const [animating, setAnimating] = useState(false);
 
   useEffect(() => {
     if (tabIndex === 1 && colorMode !== 'dark') {
-      setAnimating(true);
       setBgColor('gray.800');
       const timeout = setTimeout(() => {
         setColorMode('dark');
-        setAnimating(false);
       }, 500);
       return () => clearTimeout(timeout);
     } else if (tabIndex === 0 && colorMode !== 'light') {
-      setAnimating(true);
       setBgColor('white');
       const timeout = setTimeout(() => {
         setColorMode('light');
-        setAnimating(false);
       }, 500);
       return () => clearTimeout(timeout);
     }
@@ -69,19 +62,6 @@ const Nutshell = () => {
         pt={10}
         boxSizing="border-box"
       >
-        {fade && (
-          <Box
-            position="absolute"
-            top={0}
-            left={0}
-            right={0}
-            bottom={0}
-            bg={colorMode === 'dark' ? 'gray.800' : 'white'}
-            zIndex={1000}
-            opacity={0.7}
-            transition="opacity 0.3s ease"
-          />
-        )}
         <VStack spacing={4} align="start" maxW="container.xl" mx="auto">
           <Heading as="h2" size="2xl" textAlign="left">
             Go on and click around!

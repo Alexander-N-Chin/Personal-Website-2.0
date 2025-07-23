@@ -37,11 +37,11 @@ interface Project {
   links: string[];
 }
 
-interface SkillProjectData {
-  skills: Skill[];
-  experiences: Experience[];
-  projects: Project[];
-}
+// interface SkillProjectData {
+//   skills: Skill[];
+//   experiences: Experience[];
+//   projects: Project[];
+// }
 
 type Props = {
   skills: Skill[];
