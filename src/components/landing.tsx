@@ -7,6 +7,8 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
+
 type Props = {
   handleStart: () => void;
 };
@@ -23,7 +25,7 @@ const Landing = ({ handleStart }: Props) => {
                 Researcher & Site Reliability Engineer
               </Text>
               <Stack direction={['column', 'row']} spacing={4} >
-                <Button colorScheme="teal" size="lg" onClick={handleStart}>
+                <Button as={Link} to="/nutshell" colorScheme="teal" size="lg">
                   Interactive Resume
                 </Button>
                 <a href="/resume.pdf" download="resume.pdf">

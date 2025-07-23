@@ -2,23 +2,114 @@ import {
   Container,
   Heading,
   VStack,
+  Button,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
+  Box,
+  useColorMode,
 } from '@chakra-ui/react';
-import SkillProjectHighlighter from './SkillsAndProjects';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import EceResume from './EceResume';
+import CsSreResume from './CsSreResume';
 import EducationAwardLinker from './EducationAwardLinker';
-  
+
 const Nutshell = () => {
+  const { colorMode, setColorMode } = useColorMode();
+  const [tabIndex, setTabIndex] = useState(0);
+  const [fade, setFade] = useState(false);
+  const [bgColor, setBgColor] = useState(colorMode === 'dark' ? 'gray.800' : 'white');
+  const [animating, setAnimating] = useState(false);
+
+  useEffect(() => {
+    if (tabIndex === 1 && colorMode !== 'dark') {
+      setAnimating(true);
+      setBgColor('gray.800');
+      const timeout = setTimeout(() => {
+        setColorMode('dark');
+        setAnimating(false);
+      }, 500);
+      return () => clearTimeout(timeout);
+    } else if (tabIndex === 0 && colorMode !== 'light') {
+      setAnimating(true);
+      setBgColor('white');
+      const timeout = setTimeout(() => {
+        setColorMode('light');
+        setAnimating(false);
+      }, 500);
+      return () => clearTimeout(timeout);
+    }
+  }, [tabIndex, colorMode, setColorMode]);
+
+  const handleTabsChange = (index: number) => {
+    setTabIndex(index);
+  };
+
   return (
-    <Container maxW="container.xl" pt={10} minHeight={"100vh"}>
-        <VStack spacing={4} align="start">
+    <>
+      <Box
+        position="fixed"
+        top={0}
+        left={0}
+        width="100vw"
+        height="100vh"
+        bg={bgColor}
+        zIndex={-1}
+        transition="background-color 0.5s ease"
+      />
+      <Box
+        position="relative"
+        minHeight="100vh"
+        width={['100%', null, null, '40%']}
+        mx="auto"
+        px={[4, 6, 8]}
+        pt={10}
+        boxSizing="border-box"
+      >
+        {fade && (
+          <Box
+            position="absolute"
+            top={0}
+            left={0}
+            right={0}
+            bottom={0}
+            bg={colorMode === 'dark' ? 'gray.800' : 'white'}
+            zIndex={1000}
+            opacity={0.7}
+            transition="opacity 0.3s ease"
+          />
+        )}
+        <VStack spacing={4} align="start" maxW="container.xl" mx="auto">
           <Heading as="h2" size="2xl" textAlign="left">
-            In a nutshell...
+            Go on and click around!
           </Heading>
-          <SkillProjectHighlighter/>
-          <EducationAwardLinker/>
+          <Tabs variant="enclosed" width="100%" index={tabIndex} onChange={handleTabsChange}>
+            <TabList>
+              <Tab>ECE Research</Tab>
+              <Tab>CS / SRE</Tab>
+            </TabList>
+            <TabPanels>
+              <TabPanel p={0}>
+                <EceResume />
+              </TabPanel>
+              <TabPanel p={0}>
+                <CsSreResume />
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
+          <div style={{ marginTop: '2rem' }}>
+            <EducationAwardLinker />
+          </div>
+          <Button as={Link} to="/" colorScheme="teal" mt={8} mb={8} alignSelf="center">
+            Back to Landing
+          </Button>
         </VStack>
-    </Container>
+      </Box>
+    </>
   );
 };
-  
+
 export default Nutshell;
-  
