@@ -59,7 +59,7 @@ const Landing = ({ handleStart }: Props) => {
         <Heading className="title" fontSize="6vw">
         </Heading>
         <Text className="title" fontSize="xl">
-          Hello! My name is Alex. and I am a <span className='fancy'>site reliability engineer</span>.
+          Hello! My name is Alex, and I am a <span className='fancy'>site reliability engineer</span>.
         </Text>
         <Stack direction={['column', 'row']} spacing={4}>
           <Button as={Link} to="/nutshell" bgColor="white" color="black" size="lg">

@@ -184,8 +184,8 @@ const SkillProjectHighlighter = ({ skills, experiences, projects }: Props) => {
 
       {/* Conditional Drawer Rendering */}
       {isMobile ? (
-        <Drawer isOpen={isOpen} placement="bottom" onClose={onClose} size="full" trapFocus={false} blockScrollOnMount={false} >
-          <DrawerContent>
+        <Drawer isOpen={isOpen} placement="bottom" onClose={onClose} size="full" trapFocus={false} blockScrollOnMount={false}>
+          <DrawerContent pt={30}>
             <DrawerCloseButton />
             <DrawerHeader fontSize="xx-large">{selectedItem?.name}</DrawerHeader>
             <DrawerBody overflowY={"auto"}>
