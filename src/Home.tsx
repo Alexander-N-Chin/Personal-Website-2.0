@@ -12,11 +12,7 @@ const Home = () => {
   };
 
   return (
-    <Container maxW="container.md" p={10}>
-      <VStack spacing={8}>
-      <Landing handleStart={scrollToSection}/>
-      </VStack>
-    </Container>
+    <Landing handleStart={scrollToSection}/>
   )
 }
 
