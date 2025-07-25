@@ -1,5 +1,4 @@
 import { useRef } from 'react'
-import { Container, VStack } from '@chakra-ui/react';
 import Landing from './components/landing';
 
 const Home = () => {
