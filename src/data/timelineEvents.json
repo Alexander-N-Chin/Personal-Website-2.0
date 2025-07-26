@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Event One",
+    "date": "2020-01-01",
+    "description": "Description for event one. This is an example event on the timeline."
+  },
+  {
+    "id": 2,
+    "title": "Event Two",
+    "date": "2020-06-15",
+    "description": "Description for event two. More details can be shown here."
+  },
+  {
+    "id": 3,
+    "title": "Event Three",
+    "date": "2021-03-10",
+    "description": "Description for event three. Click to expand and see more."
+  },
+  {
+    "id": 4,
+    "title": "Event Four",
+    "date": "2022-08-25",
+    "description": "Description for event four. This event is interactive."
+  }
+]

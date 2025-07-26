@@ -44,9 +44,12 @@ const Landing = ({ handleStart }: Props) => {
         <Text className="title" fontSize="xl">
           Hello! My name is Alex, and I am a <span className='fancy'>researcher</span>.
         </Text>
-        <Stack direction={['column', 'row']} spacing={4}>
+          <Stack direction={['column', 'row']} spacing={4}>
           <Button as={Link} to="/nutshell" color="white" bgColor="black" size="lg" variant="solid">
             Interactive Resume
+          </Button>
+          <Button as={Link} to="/timeline" color="white" bgColor="blue.600" size="lg" variant="solid">
+            Timeline
           </Button>
           <a href="/resume.pdf" download="resume.pdf">
             <Button colorScheme="black" size="lg" variant="outline">
@@ -61,9 +64,12 @@ const Landing = ({ handleStart }: Props) => {
         <Text className="title" fontSize="xl">
           Hello! My name is Alex, and I am a <span className='fancy'>site reliability engineer</span>.
         </Text>
-        <Stack direction={['column', 'row']} spacing={4}>
+          <Stack direction={['column', 'row']} spacing={4}>
           <Button as={Link} to="/nutshell" bgColor="white" color="black" size="lg">
             Interactive Resume
+          </Button>
+          <Button as={Link} to="/timeline" bgColor="blue.600" color="white" size="lg" variant="solid">
+            Timeline
           </Button>
           <a href="/resume.pdf" download="resume.pdf">
             <Button colorScheme="gray" color="white" size="lg" variant="outline">
