@@ -2,12 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import {
   Box,
   Text,
-  VStack,
-  HStack,
   Tooltip,
   Collapse,
   useDisclosure,
-  useTheme,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -58,9 +55,7 @@ const Timeline = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const scrollRef = useRef<HTMLDivElement>(null);
   const bgLayers = useRef<(HTMLDivElement | null)[]>([]);
-  const scrollX = useRef(0);
   const ticking = useRef(false);
-  const theme = useTheme();
 
   useEffect(() => {
     const container = scrollRef.current;
